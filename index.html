@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Prayer & Fasting Journey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Family Prayer & Fasting Journey</h1>
+      <p class="intro">
+        This app moves through your prayer plan automatically day by day, includes fasting reminders,
+        and can read each day's prayer with a short pause before the Psalm prompt.
+      </p>
+
+      <section class="card">
+        <h2>Journey setup</h2>
+        <label>
+          Start date
+          <input id="startDate" type="date" />
+        </label>
+        <button id="saveStartDate">Save start date</button>
+        <p id="setupStatus" class="muted"></p>
+      </section>
+
+      <section class="card" id="todayCard">
+        <h2>Today's prayer</h2>
+        <p id="todayMeta"></p>
+        <h3 id="todayTitle"></h3>
+        <ul id="todayDetails"></ul>
+        <p id="todayPrayer"></p>
+        <div class="actions">
+          <button id="speakToday">🔊 Read today's prayer</button>
+          <button id="stopSpeech">⏹ Stop</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Timeline preview</h2>
+        <p class="muted">Shows the next 14 days from today.</p>
+        <ol id="timeline"></ol>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
