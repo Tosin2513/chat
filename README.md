@@ -34,7 +34,7 @@ A `netlify.toml` file is included with these defaults.
 
 ### If the deployed site does not open
 
-1. Confirm Netlify is deploying the `work` branch (or your latest branch).
+1. Confirm Netlify is deploying the branch that contains your latest commit.
 2. Confirm publish directory is `.`.
 3. Open **Deploys** and check for any failed deploy.
 4. If the URL shows 404, trigger a **Clear cache and deploy site**.
